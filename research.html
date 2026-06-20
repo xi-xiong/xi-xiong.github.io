@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Research — Xi Xiong</title>
+<meta name="description" content="Research of Xi Xiong: reinforcement learning, world foundation models, dynamic programming and optimal control, bandit algorithms and online learning." />
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">Xi Xiong</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html" class="current">Research</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="publication.html">Publications</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1 class="page-title">Research</h1>
+  <p>
+    My research sits at the intersection of control, optimization, and machine learning. I develop principled
+    decision-making frameworks for Physical AI systems, aiming to bridge the gap between rigorous theoretical
+    guarantees and high-performance adaptive intelligence. By addressing the fundamental trade-offs between
+    efficiency, safety, and generalizability, my work seeks to empower autonomous systems—including robotics,
+    autonomous vehicles, and large-scale mobility networks—to operate reliably in complex, uncertain, and
+    dynamic environments.
+  </p>
+
+  <h2>Research Directions</h2>
+
+  <div class="research-item">
+    <img src="Offline RL.png" alt="Reinforcement Learning" />
+    <div class="body">
+      <h3>Reinforcement Learning</h3>
+      <p>This line of research explores the theoretical and algorithmic foundations of <b>offline and safe multi-agent reinforcement learning (MARL)</b>.</p>
+      <ul class="tight">
+        <li><b>Objective:</b> Enabling reliable policy learning from static datasets with formal guarantees on safety and robustness.</li>
+        <li><b>Approach:</b> Integrating Bayesian inference and uncertainty quantification to bridge the gap between reinforcement learning, optimization, and statistical decision theory.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="research-item">
+    <img src="World Models.png" alt="World Foundation Models" />
+    <div class="body">
+      <h3>World Foundation Models</h3>
+      <p>I investigate the synergy between <b>world models</b> and RL for scalable decision-making under uncertainty.</p>
+      <ul class="tight">
+        <li><b>Focus:</b> Developing foundation-level models trained on multimodal data to simulate latent dynamics of agents and environments.</li>
+        <li><b>Goal:</b> Combining generative modeling with model-based planning to create systems that generalize across diverse domains and complex tasks.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="research-item">
+    <img src="Dynamic Programming.png" alt="Dynamic Programming and Optimal Control" />
+    <div class="body">
+      <h3>Dynamic Programming &amp; Optimal Control</h3>
+      <p>I advance the analytical foundations of <b>dynamic programming</b> and network optimization for multi-agent systems.</p>
+      <ul class="tight">
+        <li><b>Focus:</b> Studying structural properties, stability, and coordination across temporal and spatial scales.</li>
+        <li><b>Impact:</b> Applications include intelligent transportation networks, distributed control, and the optimization of autonomous fleets.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="research-item">
+    <img src="Bandit.png" alt="Bandit Algorithms and Online Learning" />
+    <div class="body">
+      <h3>Bandit Algorithms &amp; Online Learning</h3>
+      <p>This area focuses on adaptive decision-making within <b>contextual bandits</b> and streaming data environments.</p>
+      <ul class="tight">
+        <li><b>Focus:</b> Designing algorithms that efficiently balance exploration and exploitation.</li>
+        <li><b>Rigour:</b> Supported by non-asymptotic and regret analyses to provide theoretical guarantees for high-dimensional sequential decision problems.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Xi Xiong · Hosted on GitHub Pages</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>
