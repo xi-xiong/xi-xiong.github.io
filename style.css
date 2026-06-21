@@ -96,12 +96,19 @@ ul.tight { margin: 0 0 14px; padding-left: 20px; }
 ul.tight li { margin-bottom: 5px; }
 ul.tight li::marker { color: var(--faint); }
 
-/* Interests — uniform soft pills (single accent) */
-.interests { display: flex; flex-wrap: wrap; gap: 9px; list-style: none; margin: 0 0 8px; padding: 0; }
+/* Interests — vertical list, one topic per row */
+.interests { display: flex; flex-direction: column; list-style: none; margin: 4px 0 8px; padding: 0; }
 .interests li {
-  padding: 5px 14px; border-radius: 999px;
-  background: var(--accent-soft); color: var(--accent);
-  font-size: 0.87rem; font-weight: 600;
+  position: relative; padding: 9px 0 9px 20px;
+  font-size: 0.96rem; font-weight: 500;
+  border-bottom: 1px solid var(--line);
+}
+.interests li:last-child { border-bottom: none; }
+.interests li::before {
+  content: ""; position: absolute; left: 2px; top: 50%;
+  transform: translateY(-50%);
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent);
 }
 
 /* News */
