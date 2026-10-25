@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Xi Xiong</title>
-<meta name="description" content="Xi Xiong, Ph.D. — Research Professor at Tongji University. Reinforcement learning, world models, dynamic programming, and optimal control for intelligent systems." />
+<meta name="description" content="Xi Xiong, Ph.D. — Visiting Researcher at the University of Oxford and Research Professor at Tongji University. Robot foundation models, embodied AI agents, reinforcement learning, and control & optimization." />
 <link rel="stylesheet" href="style.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,108 +13,199 @@
 <body>
 <header class="site-header">
   <nav class="nav">
-    <a class="nav-brand" href="index.html">Xi Xiong</a>
+    <a class="nav-brand" href="#top">Xi Xiong</a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
     <ul class="nav-links">
-      <li><a href="index.html" class="current">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="people.html">People</a></li>
-      <li><a href="publication.html">Publications</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#people">People</a></li>
     </ul>
   </nav>
 </header>
 
-<main>
-  <section class="hero">
-    <div class="hero-photo">
-      <img src="xiong.jpg" alt="Xi Xiong" />
+<main id="top">
+  <!-- ===================== About ===================== -->
+  <section id="about">
+    <div class="hero">
+      <div class="hero-photo">
+        <img src="xiong.jpg" alt="Xi Xiong" />
+      </div>
+      <div class="hero-text">
+        <h1>Xi Xiong</h1>
+        <p class="role"><b>Xi Xiong, Ph.D.</b></p>
+        <p class="affil">Email: xi.xiong at nyu dot edu</p>
+        <ul class="profile-links">
+          <li><a href="CV_Xiong.pdf" target="_blank" rel="noopener">CV</a></li>
+          <li><a href="https://scholar.google.com/citations?user=4gqyNAQAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.researchgate.net/profile/Xi-Xiong-9" target="_blank" rel="noopener">ResearchGate</a></li>
+          <li><a href="https://www.linkedin.com/in/xi-xiong-317159161/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="hero-text">
-      <h1>Xi Xiong</h1>
-      <p class="role"><b>Xi Xiong, Ph.D.</b></p>
-      <p class="affil">
-        Email: xi.xiong at nyu dot edu
-      </p>
-      <ul class="profile-links">
-        <li><a href="CV_Xiong.pdf" target="_blank" rel="noopener">CV</a></li>
-        <li><a href="https://scholar.google.com/citations?user=4gqyNAQAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
-        <li><a href="https://www.researchgate.net/profile/Xi-Xiong-9" target="_blank" rel="noopener">ResearchGate</a></li>
-        <li><a href="https://www.linkedin.com/in/xi-xiong-317159161/" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
+
+    <p class="lead">
+      I am a Visiting Researcher in the
+      <a href="https://eng.ox.ac.uk" target="_blank" rel="noopener">Department of Engineering Science at the University of Oxford</a>,
+      hosted by <a href="https://www.jakobfoerster.com" target="_blank" rel="noopener">Prof. Jakob Foerster</a>,
+      and a Research Professor in
+      <a href="https://tjjt.tongji.edu.cn/English_Home/HOME.htm" target="_blank" rel="noopener">Transportation Engineering at Tongji University</a>.
+      Previously, I was a Postdoctoral Fellow at the
+      <a href="https://www.hks.harvard.edu/" target="_blank" rel="noopener">Harvard Kennedy School</a>.
+      I received a Ph.D. in Transportation Engineering from
+      <a href="https://www.nyu.edu/" target="_blank" rel="noopener">New York University</a>,
+      an M.Sc. from Tsinghua University, and a B.Sc. from Jilin University.
+    </p>
+
+    <ul class="interests">
+      <li>Autonomous Systems</li>
+      <li>Robot Foundation Models</li>
+      <li>Embodied AI Agents</li>
+      <li>Reinforcement Learning</li>
+      <li>Optimal Control</li>
+      <li>Stochastic Optimization</li>
+    </ul>
+  </section>
+
+  <!-- ===================== Research ===================== -->
+  <section id="research">
+    <h2>Research</h2>
+    <p>
+      My research sits at the intersection of control, optimization, and machine learning, building toward embodied
+      and physical AI. I develop principled decision-making frameworks—spanning robot foundation models, embodied
+      AI agents, reinforcement learning, and optimal control—that bridge rigorous theoretical guarantees with
+      high-performance adaptive intelligence. By addressing the fundamental trade-offs between efficiency, safety,
+      and generalizability, my work seeks to empower autonomous systems—robots, autonomous vehicles, and
+      large-scale mobility networks—to perceive, reason, and act reliably in complex, uncertain, and dynamic
+      environments.
+    </p>
+
+    <div class="research-grid">
+      <div class="research-card">
+        <div class="rc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg>
+        </div>
+        <h3>Robot Foundation Models</h3>
+        <p>Foundation models for robotics—<b>multi-modal world models</b> and <b>vision-language-action (VLA)</b> policies—for scalable decision-making.</p>
+        <ul class="tight">
+          <li><b>Focus:</b> Multi-modal world models that learn environment dynamics for prediction and planning, and VLA models that map perception and language to action.</li>
+          <li><b>Approach:</b> Large-scale multimodal pretraining combined with model-based planning to generalize across tasks and embodiments.</li>
+        </ul>
+      </div>
+
+      <div class="research-card">
+        <div class="rc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4.5" r="2.5"/><path d="M12 7v6.5"/><path d="M7.5 10h9"/><path d="M12 13.5 8 21M12 13.5 16 21"/></svg>
+        </div>
+        <h3>Embodied AI Agents</h3>
+        <p>Embodied agents that perceive, reason, and act in the physical world, closing the loop between <b>learning and control</b>.</p>
+        <ul class="tight">
+          <li><b>Focus:</b> Long-horizon decision-making and coordination for physical agents under real-world constraints.</li>
+          <li><b>Approach:</b> Uniting foundation models, planning, and control for robust, data-efficient embodied intelligence.</li>
+        </ul>
+      </div>
+
+      <div class="research-card">
+        <div class="rc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v4.5h-4.5"/></svg>
+        </div>
+        <h3>Reinforcement Learning</h3>
+        <p>The theoretical and algorithmic foundations of <b>offline RL</b> and <b>multi-agent RL (MARL)</b>, including <b>zero-shot coordination</b>.</p>
+        <ul class="tight">
+          <li><b>Focus:</b> Reliable policy learning from static datasets, and coordinating multiple agents—including zero-shot coordination with unseen partners.</li>
+          <li><b>Approach:</b> Uncertainty quantification with game-theoretic and population-based methods for safe, robust, and generalizable policies.</li>
+        </ul>
+      </div>
+
+      <div class="research-card">
+        <div class="rc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h7M15 7h5"/><path d="M4 12h2M10 12h10"/><path d="M4 17h9M17 17h3"/><circle cx="13" cy="7" r="2"/><circle cx="8" cy="12" r="2"/><circle cx="15" cy="17" r="2"/></svg>
+        </div>
+        <h3>Control &amp; Optimization</h3>
+        <p>The analytical foundations of <b>optimal control, dynamic programming, and stochastic optimization</b> for multi-agent and networked systems.</p>
+        <ul class="tight">
+          <li><b>Focus:</b> Structural properties, stability, and coordination across temporal and spatial scales.</li>
+          <li><b>Approach:</b> Translating this analysis into intelligent transportation networks, distributed control, and autonomous-fleet optimization.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <h2>About Me</h2>
-  <p>
-    I am a Visiting Researcher in the
-    <a href="https://eng.ox.ac.uk" target="_blank" rel="noopener">Department of Engineering Science at the University of Oxford</a>,
-    hosted by <a href="https://www.jakobfoerster.com" target="_blank" rel="noopener">Prof. Jakob Foerster</a>,
-    and a Research Professor in
-    <a href="https://tjjt.tongji.edu.cn/English_Home/HOME.htm" target="_blank" rel="noopener">Transportation Engineering at Tongji University</a>.
-    Previously, I was a Postdoctoral Fellow at the
-    <a href="https://www.hks.harvard.edu/" target="_blank" rel="noopener">Harvard Kennedy School</a>.
-    I received a Ph.D. in Transportation Engineering from
-    <a href="https://www.nyu.edu/" target="_blank" rel="noopener">New York University</a>,
-    an M.Sc. from Tsinghua University, and a B.Sc. from Jilin University.
-  </p>
+  <!-- ===================== Selected Publications ===================== -->
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <ol class="pub-list">
+      <li><span class="me">Xiong, X.</span>, Liu, L., Li, Y., and Foerster, J.N. Bayesian Offline Multi-Agent Reinforcement Learning with Latent World Models. <i>Preprint</i>, 2026.</li>
+      <li>Li, J., Cao, L., Liu, Q., and <span class="me">Xiong, X.</span> Dreamer-SAC: Off-Policy Learning in Latent World Models for Sample-Efficient Autonomous Driving. <i>In Transportation Research Board 106th Annual Meeting, TRB 2027</i>. <a class="taglink" href="https://arxiv.org/abs/2608.10386" target="_blank" rel="noopener">arXiv</a></li>
+      <li>Liu, L., Xie, C., and <span class="me">Xiong, X.</span> Offline Multi-Agent Reinforcement Learning with a Physics-Informed World Model for Cooperative Mixed Traffic Control. <i>In Transportation Research Board 106th Annual Meeting, TRB 2027</i>. <a class="taglink" href="https://arxiv.org/abs/2608.17739" target="_blank" rel="noopener">arXiv</a></li>
+      <li>Pang, A., Wang, M., Pun, M., Chen, C., and <span class="me">Xiong, X.</span> iLLM-TSC: Integration Reinforcement Learning and Large Language Model for Traffic Signal Control Policy Improvement. <i>IEEE Transactions on Vehicular Technology</i>, 2026. <a class="taglink" href="https://ieeexplore.ieee.org/abstract/document/11434951" target="_blank" rel="noopener">link</a></li>
+      <li><span class="me">Xiong, X.</span>, Wang, M., Sun, D., and Jin, L. An Approximate Dynamic Programming Approach to Vehicle Platooning Coordination in Networks. <i>IEEE Transactions on Intelligent Transportation Systems</i>, 2024, 25(11): 16536–16547. <a class="taglink" href="https://ieeexplore.ieee.org/abstract/document/10591414" target="_blank" rel="noopener">link</a></li>
+      <li><span class="me">Xiong, X.</span>, Sha, J. and Jin, L. Optimizing Coordinated Vehicle Platooning: An Analytical Approach Based on Stochastic Dynamic Programming. <i>Transportation Research Part B: Methodological</i>, 2021, 150: 482–502. <a class="taglink" href="https://www.sciencedirect.com/science/article/pii/S019126152100120X?dgcid=coauthor" target="_blank" rel="noopener">link</a></li>
+    </ol>
+    <p class="see-all">See the <a href="publication.html">full publication list</a> or <a href="https://scholar.google.com/citations?user=4gqyNAQAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+  </section>
 
-  <h2>Research Interests</h2>
-  <ul class="interests">
-    <li>Autonomous Systems</li>
-    <li>Robot Foundation Models</li>
-    <li>Embodied AI Agents</li>
-    <li>Reinforcement Learning</li>
-    <li>Optimal Control</li>
-    <li>Stochastic Optimization</li>
-  </ul>
+  <!-- ===================== People ===================== -->
+  <section id="people">
+    <h2>People</h2>
 
-  <h2>What's New</h2>
-  <ul class="news">
-    <li>
-      <span class="date">Jan 10, 2027</span>
-      <p class="what">We will present two papers at the Transportation Research Board (TRB) 106th Annual Meeting in Washington, DC: “Offline Multi-Agent Reinforcement Learning with a Physics-Informed World Model for Cooperative Mixed Traffic Control” (<a href="https://arxiv.org/abs/2608.17739" target="_blank" rel="noopener">arXiv</a>) and “Dreamer-SAC: Off-Policy Learning in Latent World Models for Sample-Efficient Autonomous Driving” (<a href="https://arxiv.org/abs/2608.10386" target="_blank" rel="noopener">arXiv</a>).</p>
-    </li>
-    <li>
-      <span class="date">Jul 26, 2026</span>
-      <p class="what">We present at the INFORMS TSL Conference at MIT, Cambridge, MA: “Bandit-Guided Dynamic Programming for Last-Mile Delivery in Stochastic Networks.” See you in Boston!</p>
-    </li>
-    <li>
-      <span class="date">Jul 1, 2026</span>
-      <p class="what">Our new book <i>Control, Learning and Optimization with Applications in Connected and Autonomous Vehicles</i> (IET), edited by Prof. Zhong-Ping Jiang (NYU) and Prof. Andreas A. Malikopoulos (Cornell), is out, to which I contributed a chapter, “Mesoscopic Control for Connected and Autonomous Vehicles in Mixed Autonomy.” <a href="https://digital-library.theiet.org/doi/abs/10.1049/PBTR049E_ch2" target="_blank" rel="noopener">link</a></p>
-    </li>
-    <li>
-      <span class="date">Mar 8, 2026</span>
-      <p class="what">Our paper “iLLM-TSC: Integrating Reinforcement Learning and Large Language Models for Traffic Signal Control Policy Improvement” is accepted by IEEE Transactions on Vehicular Technology. <a href="https://ieeexplore.ieee.org/abstract/document/11434951" target="_blank" rel="noopener">link</a></p>
-    </li>
-    <li>
-      <span class="date">Dec 8, 2025</span>
-      <p class="what">I give a talk at the Stanford Intelligent Systems Laboratory, hosted by Prof. <a href="https://mykel.kochenderfer.com" target="_blank" rel="noopener">Mykel Kochenderfer</a>, titled “Optimizing Mixed-Autonomy Traffic with Reinforcement Learning and Large Language Models.”</p>
-    </li>
-    <li>
-      <span class="date">Nov 18, 2025</span>
-      <p class="what">We present two papers at IEEE ITSC in Gold Coast, Australia: “Multi-Armed Bandit for Stochastic Shortest Path in Mixed Autonomy” (<a href="https://ieeexplore.ieee.org/document/11423731" target="_blank" rel="noopener">link</a>) and “A Large Language Model-Enhanced Q-Learning for Capacitated Vehicle Routing Problem with Time Windows” (<a href="https://ieeexplore.ieee.org/document/11423177" target="_blank" rel="noopener">link</a>).</p>
-    </li>
-    <li>
-      <span class="date">Sep 1, 2025</span>
-      <p class="what">We welcome Jiazhuo Li, who joins our lab as a master's student.</p>
-    </li>
-    <li>
-      <span class="date">Jun 18, 2025</span>
-      <p class="what">We present at the IFAC Workshop on Control of Systems Governed by Partial Differential Equations (CPDE 2025) in Beijing, China: “Dyna-Style Learning with a Macroscopic Model for Vehicle Platooning in Mixed-Autonomy Traffic.” <a href="https://www.sciencedirect.com/science/article/pii/S2405896325006421" target="_blank" rel="noopener">link</a></p>
-    </li>
-    <li>
-      <span class="date">May 18, 2025</span>
-      <p class="what">I begin my academic visit at the University of Oxford, hosted by Prof. <a href="https://www.jakobfoerster.com" target="_blank" rel="noopener">Jakob Foerster</a> in the Department of Engineering Science.</p>
-    </li>
-    <li>
-      <span class="date">Apr 22, 2025</span>
-      <p class="what">I attend the 13th International Conference on Learning Representations (ICLR 2025) in Singapore.</p>
-    </li>
-    <li>
-      <span class="date">Jan 5, 2025</span>
-      <p class="what">We present at the 104th TRB Annual Meeting in Washington, DC: “Reinforcement Learning from Human Feedback for Lane Changing of Autonomous Vehicles in Mixed Traffic.” <a href="http://arxiv.org/abs/2408.04447" target="_blank" rel="noopener">link</a></p>
-    </li>
-  </ul>
+    <h3>Current Graduate Students</h3>
+    <div class="people-group">
+      <div class="person">
+        <div class="name">Lu Liu</div>
+        <div class="meta">Ph.D. Student, Transportation Engineering, Tongji University, 2023–</div>
+      </div>
+      <div class="person">
+        <div class="name">Yiming Li</div>
+        <div class="meta">Ph.D. Student, Transportation Engineering, Tongji University, 2024–<br />
+          Co-advised with <a href="https://tjjt.tongji.edu.cn/info/3028/9691.htm" target="_blank" rel="noopener">Prof. Yu Bai</a></div>
+      </div>
+      <div class="person">
+        <div class="name">Linjiang Cao</div>
+        <div class="meta">M.S. Student, Transportation Engineering, Tongji University, 2024–</div>
+      </div>
+      <div class="person">
+        <div class="name">Jiazhuo Li</div>
+        <div class="meta">M.S. Student, Transportation Engineering, Tongji University, 2025–</div>
+      </div>
+    </div>
+
+    <h3>Former Members</h3>
+    <div class="people-group">
+      <div class="person">
+        <div class="name">Yichuan Zou</div>
+        <div class="meta">M.S., Computer Science and Technology, Shanghai Jiao Tong University, 2024<br />
+          After graduation: ByteDance</div>
+      </div>
+      <div class="person">
+        <div class="name">Ramona Cheng</div>
+        <div class="meta">B.S., Aerospace Engineering and Computer Science, University of Michigan, Ann Arbor, 2024</div>
+      </div>
+      <div class="person">
+        <div class="name">Junyi Sha</div>
+        <div class="meta">B.S., Mathematics and Physics, New York University, 2021<br />
+          After graduation: Ph.D. student at MIT</div>
+      </div>
+      <div class="person">
+        <div class="name">Teze Wang</div>
+        <div class="meta">M.S., Civil and Urban Engineering, New York University, 2020<br />
+          After graduation: Marketing Director at China Chengxin Credit Management Co. Ltd.</div>
+      </div>
+      <div class="person">
+        <div class="name">Zev Nicolai-Scanio</div>
+        <div class="meta">B.S., Computer Science, Harvard University, 2020</div>
+      </div>
+      <div class="person">
+        <div class="name">Hengning Zhang</div>
+        <div class="meta">B.S., Computer Science, New York University, 2020</div>
+      </div>
+      <div class="person">
+        <div class="name">Erdong Xiao</div>
+        <div class="meta">M.S., Mechatronics and Robotics, New York University, 2019<br />
+          After graduation: Ph.D. student at the University of Hong Kong</div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
@@ -129,6 +220,7 @@
     const open = links.classList.toggle('open');
     toggle.setAttribute('aria-expanded', open);
   });
+  links.addEventListener('click', e => { if (e.target.tagName === 'A') links.classList.remove('open'); });
 </script>
 </body>
 </html>
